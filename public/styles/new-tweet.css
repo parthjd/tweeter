@@ -1,0 +1,44 @@
+.new-tweet {
+  margin: 20px auto;
+  padding: 10px 0px;
+  display: none;
+}
+
+.new-tweet h2 {
+  font-weight: 600;
+  margin: 10px 0px;
+  font-family: 'Bungee',
+    cursive;
+}
+
+textarea {
+  border: none;
+  border-bottom: 4px solid black;
+  font-family: 'Source Sans Pro',
+    sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  width: 100%;
+  margin: 15px 0px;
+  resize: none;
+  background-color: #f4f1ec;
+  height: 70px;
+}
+
+.submit {
+  background-color: #4056A1;
+  font-family: 'Bungee',
+    cursive;
+  font-size: 22px;
+  margin-top: 10px;
+  padding: 8px;
+  ;
+}
+
+.counter {
+  float: right;
+  font-family: 'Bungee',
+    cursive;
+  font-size: 24px;
+  margin-top: 10px;
+}

@@ -1,0 +1,21 @@
+.info {
+  height: 520px;
+  width: 100%;
+  background-color: rgb(214, 115, 50);
+  position: relative;
+  padding-top: 120px;
+}
+
+.avatar {
+  position: absolute;
+  top: 23%;
+  left: 44%;
+}
+
+.your-name {
+  position: absolute;
+  top: 73%;
+  left: 46%;
+  color: #ffffff;
+
+}

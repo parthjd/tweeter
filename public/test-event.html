@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="">
+    <input type="text" name="text" id="text">
+  </form>
+
+  <script>
+    document.addEventListener("keypress", e => {
+      console.log(e, "keypress")
+    })
+    document.addEventListener("keyup", e => {
+      console.log(e, "keyup")
+    })
+    document.addEventListener("keydown", e => {
+      console.log(e, "keydown")
+    })
+    document.addEventListener("blur", e => {
+      console.log(e, "blur")
+    })
+    document.addEventListener("change", e => {
+      console.log(e, "change")
+    })
+  </script>
+</body>
+<!--
+change event
+keydown event
+keyup event
+blur event
+keypress event
+
+-->
+
+</html>
