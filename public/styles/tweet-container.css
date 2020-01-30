@@ -55,6 +55,7 @@
 .tweet-content {
   padding: 15px;
   border-bottom: solid 4px black;
+  overflow-wrap: break-word;
 }
 
 .footer-user {
@@ -66,7 +67,7 @@
   position: absolute;
   top: 5px;
   right: 10px;
-  color: blue;
+  /* color: blue; */
 }
 
 .days {
@@ -82,4 +83,16 @@
 
 .oldTweet:hover .likes-icon {
   text-shadow: 2px 3px 2px #81869e
+}
+
+.fa-flag {
+  color: #FCB0B3;
+}
+
+.fa-heart {
+  color: #F93943;
+}
+
+.fa-retweet {
+  color: #4056A1;
 }

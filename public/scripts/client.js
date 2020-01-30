@@ -1,34 +1,8 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-// const data = [
-//   {
-//     user: {
-//       name: "Newton",
-//       avatars: "https://i.imgur.com/73hZDYK.png",
-//       handle: "@SirIsaac"
-//     },
-//     content: {
-//       text:
-//         "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     created_at: 1580152151552
-//   },
-//   {
-//     user: {
-//       name: "Descartes",
-//       avatars: "https://i.imgur.com/nlhLi3I.png",
-//       handle: "@rd"
-//     },
-//     content: {
-//       text: "Je pense , donc je suis"
-//     },
-//     created_at: 1580254875421
-//   }
-// ];
+const escape = function(str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 const renderTweets = function(tweets) {
   // loops through tweets
@@ -50,7 +24,7 @@ const createTweetElement = function(tweet) {
   <p class="username">${tweet.user.name}</p>
   <p class="userid">${tweet.user.handle}</p>
   </section>
-  <p class="tweet-content">${tweet.content.text}
+  <p class="tweet-content">${escape(tweet.content.text)}
   </p>
   </header>
   <footer class="footer-user">
@@ -86,13 +60,14 @@ $(document).ready(function() {
     $tweetPost.on("click", function(event) {
       event.preventDefault();
       let $tweet = $("#tweet").val().length;
-      console.log("Button clicked, performing ajax call...");
-      console.log($tweet);
       if ($tweet === 0) {
-        alert("Cannot post blank Tweet");
+        $(".warning").css("display", "inline-block");
       } else if ($tweet > 140) {
-        alert("Tweet too long.. control your thoughts");
+        // $(".validation").css("display", "block");
+        // $(".warning").css("display", "none");
       } else {
+        $(".warning").css("display", "none");
+        $(".validation").css("display", "none");
         $.ajax({
           type: "POST",
           url: "/tweets",
@@ -106,6 +81,6 @@ $(document).ready(function() {
 
   $(".down-arrow").click(function(e) {
     e.preventDefault();
-    $(".new-tweet").css("display", "block");
+    $(".new-tweet").slideToggle("slow");
   });
 });

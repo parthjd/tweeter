@@ -3,6 +3,7 @@
 
 <head>
   <!-- Meta Information -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   <title>Tweeter - Home Page</title>
   <script src="https://kit.fontawesome.com/2c4ef76a61.js" crossorigin="anonymous"></script>
 
@@ -34,54 +35,57 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span class="logo">tweeter</span>
-    <span class="content"><strong>Write</strong> a new tweet</span>
+    <p class="logo">tweeter</p>
+    <p class="content"><strong>Write</strong> a new tweet</p>
     <a class="down-arrow" href="#tweet"><i class="fas fa-angle-double-down"></i></a>
   </nav>
-  <header class="info">
-    <div>
-      <img class="avatar" src="./images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2 class="your-name"><strong>Sussie</strong> George</h2>
-    </div>
-  </header>
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-    <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <form action="/tweets" method="POST">
-        <textarea name="text" id="tweet" placeholder="What are you humming about?"></textarea>
-        <br>
-        <input class="submit" type="submit" value="Tweet" id="post-tweet">
-        <span class="counter">140</span>
-      </form>
-    </section>
-    <section class="tweet-container">
-      <article class="oldTweet">
-        <header>
-          <section class="user">
-            <img class="tweet-avatar" src="./images/profile-hex.png">
-            <p class="username">Sussy George</p>
-            <p class="userid">@SussyGeorge</p c>
-          </section>
-          <p class="tweet-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum iusto explicabo
-            dicta
-            eligendi eius harum?
-          </p>
-        </header>
-        <footer class="footer-user">
-          <p class="days">Posted 10 days ago</p>
-          <div class="likes">
-            <i class="fas fa-flag likes-icon"></i>
-            <i class='fas fa-retweet likes-icon'></i>
-            <i class="fas fa-heart likes-icon"></i>
-          </div>
-        </footer>
-      </article>
-    </section>
+    <header class="info">
+      <img class="avatar" src="./images/profile-hex.png">
+      <br>
+      <h2 class="your-name"><strong>Sussie</strong> George</h2>
+    </header>
+
+    <div class="tweet-container-one">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+
+        <form action="/tweets" method="POST">
+
+          <textarea name="text" id="tweet" placeholder="What are you humming about?"></textarea>
+          <br>
+          <input class="submit" type="submit" value="Tweet" id="post-tweet">
+          <p class="warning"><i class="fas fa-exclamation-circle"></i>Cannot post empty tweet</p>
+          <p class="validation"><i class="fas fa-exclamation-circle"></i>Tweet more than 140 characters</p>
+          <span class="counter">140</span>
+        </form>
+      </section>
+      <section class="tweet-container">
+        <article class="oldTweet">
+          <header>
+            <section class="user">
+              <img class="tweet-avatar" src="./images/profile-hex.png">
+              <p class="username">Sussy George</p>
+              <p class="userid">@SussyGeorge</p c>
+            </section>
+            <p class="tweet-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum iusto explicabo
+              dicta
+              eligendi eius harum?
+            </p>
+          </header>
+          <footer class="footer-user">
+            <p class="days">Posted 10 days ago</p>
+            <div class="likes">
+              <i class="fas fa-flag likes-icon"></i>
+              <i class='fas fa-retweet likes-icon'></i>
+              <i class="fas fa-heart likes-icon"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
+    </div>
   </main>
 </body>
 

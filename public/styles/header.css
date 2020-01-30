@@ -1,21 +1,50 @@
 .info {
-  height: 520px;
-  width: 100%;
+  height: 25rem;
+  width: 27rem;
   background-color: rgb(214, 115, 50);
   position: relative;
-  padding-top: 120px;
+  margin-top: 1.9rem;
+  margin-left: 6rem;
+  margin-right: 15rem;
 }
 
 .avatar {
   position: absolute;
-  top: 23%;
-  left: 44%;
+  top: 4rem;
+  left: 6rem;
 }
 
 .your-name {
   position: absolute;
-  top: 73%;
-  left: 46%;
+  top: 20rem;
+  left: 8rem;
   color: #ffffff;
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .info {
+    width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .avatar {
+    top: 4rem;
+    left: 17rem;
+    height: 13rem;
+    width: 13rem;
+  }
+
+  .your-name {
+    /* top: 20rem; */
+    top: 17rem;
+    font-size: 2rem;
+    left: 18rem;
+  }
+
+  .tweet-container {
+    font-size: 1.2rem;
+  }
 
 }
