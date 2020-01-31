@@ -32,7 +32,7 @@ When a user tries to post the tweet that is more than 140 characters, the app gi
 !["Screenshot of the new tweet posted"](docs/new-tweet.png)
 In this screenshot, user can see the new tweet that is posted. I have also added the moment.js to calculate/display the time ago the tweet was posted.
 
-!["Screenshot of the Ipad version"](docs/ipad.png)
+!["Screenshot of the Ipad version"](docs/ipad-version.png)
 This screenshot is the Ipad version of the Tweeter app with all/same functionalities as the desktop version.
 
 ## Dependencies
