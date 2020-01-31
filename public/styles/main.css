@@ -10,27 +10,6 @@
 
 /*  media queries styles */
 
-@media only screen and (min-width:1024px) and (max-width: 1440px) {
-
-  .info {
-    margin-left: 3rem;
-    margin-right: 5rem;
-  }
-
-  .avatar {
-    left: 8rem;
-  }
-
-  .your-name {
-    /* left: 5rem; */
-    left: 7rem;
-  }
-
-  body {
-    font-size: 16px;
-  }
-
-}
 
 @media only screen and (max-width: 1024px) {
 

@@ -1,5 +1,6 @@
 .tweet-container {
   margin: 25px 0px;
+  width: 50vw;
 }
 
 .oldTweet {
@@ -67,6 +68,7 @@
   position: absolute;
   top: 5px;
   right: 10px;
+  letter-spacing: 5px;
   /* color: blue; */
 }
 
@@ -95,4 +97,10 @@
 
 .fa-retweet {
   color: #4056A1;
+}
+
+@media only screen and (max-width:1024px) {
+  .tweet-container {
+    width: 90vw;
+  }
 }
